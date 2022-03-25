@@ -20,6 +20,7 @@ body {
 
 /* nav start */
 
+
 .main-nav{
     max-width: 100%;
     padding: 0.5rem 1.5rem;
@@ -355,6 +356,8 @@ margin-right: 1rem;
       .services .container>div:nth-of-type(1),.services .container>div:nth-of-type(2){
       padding-bottom: 20px;
       }
+
+     
   } 
 
   /*Packages Section*/
@@ -852,8 +855,29 @@ footer{
 
 /*  nav and hero responsive start */
 
+@media screen and (max-width: 749px){
+  main{
+    margin: 0;
+    padding: 0;
+  } 
+ 
+  .main-nav{
+
+    background:#FAFAFA;
+  }
+  
+  .menu .links li:hover{
+      transform: translateX(20px);
+     
+  }
+
+
+
+}
+
 @media screen and (min-width: 750px) {
-    .main-nav img{
+  
+  .main-nav img{
         width: 6rem;
         
     }
@@ -922,18 +946,7 @@ footer{
     
   }
 
-  @media screen and (max-width: 749px){
-    .main-nav{
-
-      background:#FAFAFA;
-    }
-    
-    .menu .links li:hover{
-        transform: translateX(20px);
-       
-    }
-
-  }
+  
 
   
 
@@ -951,4 +964,16 @@ footer{
    0%{
     transform: scale(1);
   }
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
   }
