@@ -49,6 +49,17 @@ scrollLinks.forEach((link)=>{
       position = position - navHeight;
     }
 
+    
+
+    
+
+   
+
+
+   
+
+    
+
     window.scrollTo({
       left: 0,
       top: position,
