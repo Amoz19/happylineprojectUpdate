@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.icon-list-icon{
+    font-size: 18px;
+}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
  
 :root{
@@ -284,6 +286,23 @@ body {
     height: auto;
 }
 
+.mobile{
+  display: none;
+}
+
+.laptop{
+  display: block;
+}
+
+@media(max-width:800px){
+  .laptop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+} 
 /* hero end */
 
 /*Services Section*/
@@ -532,6 +551,10 @@ body {
     padding: 5px 0;
   }
 
+  .icon-list-icon{
+    font-size: 16px;
+  }
+
   .packages ul{
     padding: 0;
   }
@@ -580,14 +603,18 @@ body {
         width: 30%;
   }
 }
-@media(max-width: 780px){
+@media(max-width: 800px){
   .wrapper .card{
     width: calc(50% - 20px);
     margin-bottom: 50px;
   }
+
+  .icon-list-icon{
+    font-size: 18px;
+  }
 }
 
-@media(max-width: 550px){
+@media(max-width: 580px){
   .wrapper .card{
     width: 100%;
   }
